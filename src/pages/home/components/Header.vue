@@ -1,0 +1,53 @@
+<template>
+  <div class="header">
+    <div class="header-left">
+      <div class="iconfont back-icon">&#xe624;</div>
+    </div>
+    <div class="header-input">
+      <span class="iconfont">&#xe632;</span>
+      搜索城市/景点/游玩主题
+    </div>
+    <div class="header-right">
+      城市
+      <span class="iconfont arrow-icon">&#xe64a;</span>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'HomeHeader'
+}
+</script>
+<!--添加scoped让样式只在这个文件中有效，不会影响其他组件-->
+<style lang='stylus' scoped>
+// 1rem = html设置的font-size = 50px
+// 如设计图是实际像素的2倍，比如header在设计图高度是86px，实际像素是43px，则设置为0.86rem即可得到实际43px像素
+@import '~styles/varibles.styl'
+.header
+  display flex
+  line-height .86rem
+  color #fff
+  background $bgColor
+  .header-left
+    width .64rem
+    float left
+    .back-icon
+      text-align center
+      font-size .2rem
+  .header-input
+    flex 1
+    height .64rem
+    line-height .64rem
+    color #ccc
+    margin .12rem 0 0 .2rem
+    padding-left .2rem
+    background #fff
+    border-radius .1rem
+  .header-right
+    width 1.24rem
+    float right
+    text-align center
+    .arrow-icon
+      font-size .2rem
+</style>

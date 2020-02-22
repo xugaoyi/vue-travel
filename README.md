@@ -1,4 +1,7 @@
-# vue-test
+# vue-travel
+
+Vue练手项目-仿去哪儿app
+* 使用vue-cli 3.11.0 搭建的项目
 
 ## Project setup
 ```
