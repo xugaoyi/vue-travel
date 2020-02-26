@@ -21,7 +21,7 @@ export default {
       iconList: [{
         id: '0001',
         imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '热门景点热门景点热门景点'
+        desc: '热门景点'
       }, {
         id: '0002',
         imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png',
