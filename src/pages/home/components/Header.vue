@@ -8,7 +8,7 @@
       搜索城市/景点/游玩主题
     </div>
     <div class="header-right">
-      城市
+      {{city}}
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
@@ -16,7 +16,13 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: {
+      type: String,
+      default: '城市'
+    }
+  }
 }
 </script>
 <!--添加scoped让样式只在这个文件中有效，不会影响其他组件-->
@@ -44,6 +50,7 @@ export default {
     padding-left .2rem
     background #fff
     border-radius .1rem
+    overflow hidden
   .header-right
     width 1.24rem
     float right

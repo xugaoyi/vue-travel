@@ -8,6 +8,8 @@ import 'styles/border.css'
 import 'styles/iconfont.css'
 import 'swiper/dist/css/swiper.css'
 
+// require('./mock') // 引入mock数据，不需要时，则注释掉
+
 Vue.config.productionTip = false
 fastClick.attach(document.body)
 Vue.use(VueAwesomeSwiper)

@@ -6,7 +6,7 @@
         <img class="item-img" :src="item.imgUrl" alt="">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
-          <p class="item-desc">{{item.dese}}</p>
+          <p class="item-desc">{{item.desc}}</p>
           <button class="item-button">查看详情</button>
         </div>
       </li>
@@ -17,28 +17,31 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    recommendList: Array
+  },
   data () {
     return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/wugc/p189/201206/12/a3ace34bc010041193835fbb.jpg_250x250_91601e97.jpg',
-          title: '南山文化旅游区',
-          dese: '5A级景区'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://imgs.qunarzz.com/wugc/p189/201206/12/a3ace34bc010041193835fbb.jpg_250x250_91601e97.jpg',
-          title: '南山文化旅游区',
-          dese: '5A级景区'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://imgs.qunarzz.com/wugc/p189/201206/12/a3ace34bc010041193835fbb.jpg_250x250_91601e97.jpg',
-          title: '南山文化旅游区',
-          dese: '5A级景区'
-        }
-      ]
+      // recommendList: [
+      //   {
+      //     id: '0001',
+      //     imgUrl: 'https://imgs.qunarzz.com/wugc/p189/201206/12/a3ace34bc010041193835fbb.jpg_250x250_91601e97.jpg',
+      //     title: '南山文化旅游区',
+      //     desc: '5A级景区'
+      //   },
+      //   {
+      //     id: '0002',
+      //     imgUrl: 'https://imgs.qunarzz.com/wugc/p189/201206/12/a3ace34bc010041193835fbb.jpg_250x250_91601e97.jpg',
+      //     title: '南山文化旅游区',
+      //     desc: '5A级景区'
+      //   },
+      //   {
+      //     id: '0003',
+      //     imgUrl: 'https://imgs.qunarzz.com/wugc/p189/201206/12/a3ace34bc010041193835fbb.jpg_250x250_91601e97.jpg',
+      //     title: '南山文化旅游区',
+      //     desc: '5A级景区'
+      //   }
+      // ]
     }
   }
 }
