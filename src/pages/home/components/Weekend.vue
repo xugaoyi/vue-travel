@@ -54,6 +54,7 @@ export default {
   line-height .6rem
   background #eee
   text-indent .2rem
+  font-size .3rem
 .item-img-wraper
   overflow hidden
   height 0

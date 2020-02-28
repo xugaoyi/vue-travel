@@ -54,6 +54,7 @@ export default {
   line-height .6rem
   background #eee
   text-indent .2rem
+  font-size .3rem
 .item
   display flex
   height 1.9rem
